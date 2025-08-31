@@ -36,9 +36,10 @@
       </plugins>
     </pluginManagement>
 
-    <plugins>
-      <plugin>
+    <build>
+     <plugins>
         <!-- Build WAR for deployment -->
+       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.2</version>
@@ -46,8 +47,8 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
-
-      <plugin>
+     <plugins>
+      <build>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <version>3.6.1</version>
